@@ -21,7 +21,7 @@ header {
     align-items: center;
     padding-left: 20px;
     background: black;
-    color: white;
+    color: whitesmoke;
 }
 
 .logo {
@@ -45,5 +45,40 @@ header {
 
 #nav-bar a{
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
+}
+
+.showcase{
+    display: flex;
+    flex-basis: 2fr 3fr;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    height: 450px;
+    align-items: center;
+}
+
+.showcase h2{
+    padding: 40px;
+    max-width: 500px;
+    /* border: solid 5px white; */
+    color: whitesmoke;
+    line-height: 1.4em;
+}
+.youtube-video-container {
+    padding: 0 40px 0 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 900px){
+    .showcase {
+        flex-wrap: wrap;
+    }
+    .logo h3 {
+        display: none;
+    }
+    .showcase h2{
+        padding-top: 50px;
+    }
 }
