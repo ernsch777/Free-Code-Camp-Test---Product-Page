@@ -12,12 +12,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     overflow: auto;
+    color: whitesmoke;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    height: 58px;
+    height: 65px;
     align-items: center;
     padding-left: 20px;
     background: black;
@@ -52,15 +53,15 @@ header {
     display: flex;
     flex-basis: 2fr 3fr;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
-    height: 450px;
+    height: 400px;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .showcase h2{
     padding: 40px;
     max-width: 500px;
-    /* border: solid 5px white; */
     color: whitesmoke;
     line-height: 1.4em;
 }
@@ -70,15 +71,91 @@ header {
     height: auto;
 }
 
+.products {
+    display: grid;
+}
 
-@media screen and (max-width: 900px){
+.line1 {
+    background: whitesmoke;
+    height: 2px;
+    width: 66%;
+    margin: 40px auto;
+}
+.products h2, p {
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0 100px;
+}
+.products br {
+    display: none;
+}
+.cardline {
+    display: flex;
+    height: 600px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: grey;
+    color: whitesmoke;
+    display: grid;
+    align-content: space-between;
+}
+
+.card button {
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: black;
+}
+
+
+
+@media screen and (max-width: 960px){
     .showcase {
         flex-wrap: wrap;
+        height: 600px;
     }
     .logo h3 {
         display: none;
     }
     .showcase h2{
-        padding-top: 50px;
+        padding-top: 0px;
+        margin-bottom: -90px;
+        font-size: 1.7em;
+        max-width: 600px;
+    }
+    .cardline {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        height: 1130px;
+    }
+    .card {
+        width: 350px;
+        height: 350px;
+    }
+    .products h2 {
+        font-size: 1.7em;
+    }
+    .products br {
+        display: inline-flex
+    }
+    .products p {
+        padding-bottom: 30px;
+        margin: 0 90px;
+    }
+    .line1 {
+        width: 75%;
+        margin: 30px auto;
+        margin-top: 0px;
+    }
+    .youtube-video-container {
+        padding: 0 40px;
     }
 }
