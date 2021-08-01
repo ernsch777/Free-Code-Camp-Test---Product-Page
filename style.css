@@ -21,8 +21,6 @@ header {
     height: 65px;
     align-items: center;
     padding-left: 20px;
-    background: black;
-    color: whitesmoke;
 }
 
 .logo {
@@ -91,21 +89,16 @@ header {
 }
 .cardline {
     display: flex;
-    height: 600px;
+    height: 360px;
     justify-content: space-evenly;
     margin-top: 10px;
 }
-
 .card {
     width: 300px;
     height: 300px;
-    padding: 20px;
-    background-color: grey;
-    color: whitesmoke;
     display: grid;
     align-content: space-between;
 }
-
 .card button {
     height: 40px;
     width: 120px;
@@ -113,8 +106,63 @@ header {
     color: whitesmoke;
     background-color: black;
 }
-
-
+#RBcard {
+    background-image: url("resistance-bands.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: 50% 50%;
+    padding: 10px 0 20px 20px;
+}
+#RBaccessories {
+    background-image: url("workout-accessories.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    padding: 10px 0 20px 20px;
+}
+#RBprograms {
+    background-image: url("digital-programs.jpg");
+    background-position:right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 0 20px 20px;
+}
+.programs {
+    border-top: solid 20px rgb(245, 107, 56);
+    border-bottom: solid 20px rgb(245, 107, 56);
+    height: 600px;
+}
+.programsbody {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 20px;
+}
+.programs h2{
+    padding: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.programsbody ul{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+}
+.programsbody li{
+    list-style: none;
+    padding: 20px;
+}
+.programsbody a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.programsbody img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
 
 @media screen and (max-width: 960px){
     .showcase {
@@ -135,6 +183,7 @@ header {
         align-items: center;
         gap: 40px;
         height: 1130px;
+        margin-bottom: 50px;
     }
     .card {
         width: 350px;
@@ -157,5 +206,23 @@ header {
     }
     .youtube-video-container {
         padding: 0 40px;
+    }
+    .programsbody {
+        flex-direction: column;
+        align-items: space-between;
+    }
+    .programs {
+        border-top: solid 15px rgb(245, 107, 56);
+        border-bottom: solid 15px rgb(245, 107, 56);
+        height: 900px;
+    }
+    .programsbody img{
+        margin-top: 20px;
+    }
+    #RBcard {
+        padding: 25px 40px 20px 35px;
+    }
+    #RBaccessories {
+        padding: 13px 0 20px 20px;
     }
 }
