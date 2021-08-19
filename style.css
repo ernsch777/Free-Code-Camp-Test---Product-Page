@@ -21,6 +21,11 @@ header {
     height: 65px;
     align-items: center;
     padding-left: 20px;
+    z-index: 100;
+    width:100%;
+    position:fixed;
+    top:0px;
+    background: black;
 }
 
 .logo {
@@ -79,7 +84,7 @@ header {
     width: 66%;
     margin: 40px auto;
 }
-.products h2, p {
+.products h2, .products p {
     padding-bottom: 40px;
     text-align: center;
     margin: 0 100px;
@@ -163,6 +168,76 @@ header {
     max-width: 400px;
     height: auto;
 }
+.review_header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 40px;
+}
+.reviews {
+    display: flex;
+    justify-content: space-evenly;
+    height: 320px;
+    margin: 40px auto;
+}
+
+.revcard {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    font-size: 0.9rem;
+    display: grid;
+    align-content: center;
+    color: black;
+    background-image: url(Review-card-background.jpg);
+}
+.name{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.fa-quote-left {
+    padding-bottom: 5px;
+}
+.fa-quote-right {
+    text-align: right;
+    padding-top: 2px;
+}
+
+#form {
+    border-top: solid 10px rgb(245, 107, 56);
+    height: 300px;
+    width: 800px;
+    display: grid;
+    /* align-content: space-between; */
+    justify-items: center;
+    background-image: url(silver-lining-background.jpg);
+    background-size: cover;
+    background-position: top;
+    margin: 0 auto;
+}
+
+#form h3 {
+    padding-top: 40px;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.iblock {
+    height: 60px;
+    width: 300px;
+}
+.btn {
+    height: 30px;
+    width: 100px;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 960px){
     .showcase {
@@ -224,5 +299,38 @@ header {
     }
     #RBaccessories {
         padding: 13px 0 20px 20px;
+    }
+    #form {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    iframe{
+        width: 420px;
+        height: 236px;
+    }
+    .reviews {
+        height: 700px;
+        margin: 0 auto;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-content: space-around;
+    }
+    .revcard {
+        margin: 0 auto;
+    }
+    #form {
+        width: 400px;
+        height: 260px;
+    }
+    #form h3 {
+        padding: 30px 30px 0px 30px;
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+    .iblock {
+        height: 40px;
+        width: 300px;
     }
 }

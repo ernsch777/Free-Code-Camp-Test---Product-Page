@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UnderSun</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head> 
 <body>
     <header id="header">
@@ -25,7 +26,7 @@
     <section class="showcase">
         <h2 class="showcasetext">AT UNDERSUN, OUR MISSION IS TO HELP YOU RECLAIM YOUR BODY, YOUR TIME, AND YOUR FREEDOM.</h2>
         <div class="youtube-video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xrhMpzhz0s4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xrhMpzhz0s4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
     <div id="our-products" class="products">
@@ -68,18 +69,37 @@
         <!-- </div> -->
         </div>
     </div>
-    <div class="reviews">
-
+    <h3 class="review_header">
+        REVIEWS
+    </h3>
+    <div id="our-reviews" class="reviews">
+        <div class="revcard">
+            <i class="fa fa-quote-left fa-2x"></i>
+            <p>I have tried hop resistance bands before, and did not think much of them. When I saw that Undersun had their own set I just had to try them.  I was not disappointed, the resistance is real and the band itself is very well-made. I recommend them without reservation to anyone interested in a great hip workout.</p>
+            <i class="fa fa-quote-right fa-2x"></i>
+            <p class="name">William Money</p>
+        </div>
+        <div class="revcard">
+            <i class="fa fa-quote-left fa-2x"></i>
+            <p>
+                I like how portable they are. Makes working out outdoors easier. Not sure how well they can handle cold weather though, guess I'll find out this winter. 
+            </p>
+            <i class="fa fa-quote-right fa-2x"></i>
+            <p class="name">Oscar DeLareta</p>
+        </div>
     </div>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h3>We Would Love To Hear From You!</h3>
+        <label for="email" id="email-label"></label>
+        <input class="iblock" type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        <div class="btn">
+            <input type="submit" value="Submit" id="submit" class="btn btn-primary">
+        </div> 
+    </form>
 </body>
 </html>
 
 <!-- 
-    1. Need to adjust video and hamburger menu at 560 px width screens
-    2. Need to add intrapage links
-    3. Need to add two simple reviews with quotes used
-    4. Need pictures for background of products
-    5. Need to learn font awesome
-    6. Probably need a better font
-    7. 
+    1. Need to add hamburger menu at 560 px width screens
+    2. Need to add contact form
 -->
