@@ -2,3 +2,4 @@
 2. Had fun adding the video and using flex direction to adjust at small @media screens. 
 3. Added cards and more @media query adjustments to layout.
 4. Added images to cards, more @media query adjustments, and the digital programs section. Still need fontawesome icons and review section before submitting. 
+5. Swung back to this challenge and completed it. Added the review section and the email form as well. Tidied up the low resolution issues. 
