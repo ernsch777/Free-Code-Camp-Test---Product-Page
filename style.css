@@ -28,16 +28,16 @@ header {
     background: black;
     max-width: 1200px;
 }
-
-.logo {
+.logo h3 {
+    padding-left: 10px;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.logo h3 {
-    padding-left: 15px;
-}
-
 #nav-bar ul{
     display: flex;
     justify-content: space-evenly;
