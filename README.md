@@ -4,3 +4,4 @@
 4. Added images to cards, more @media query adjustments, and the digital programs section. Still need fontawesome icons and review section before submitting. 
 5. Swung back to this challenge and completed it. Added the review section and the email form as well. Tidied up the low resolution issues. 
 6. Went back and fixed navbar scrolling to the right issue for larger screen and the logo/navbar conflict at smaller screen. Tidied up the spacing and padding some more and it's looking pretty nice. 
+7. Fixed responsive layout for cell phone screen sizes, adjusted layouts and fonts, re-wrapped iframe video to clear up issues, and finished up nav bar and hover effects. 
